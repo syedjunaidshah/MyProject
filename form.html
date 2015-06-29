@@ -1,0 +1,106 @@
+<html>
+
+<head>
+<title> Create Ad </title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<style>
+
+table, th, td {
+border: 1px solid white;
+border-collapse: collapse;
+padding: 20px;}
+
+input{
+padding : 5px;}
+
+</style> 
+</head>
+
+<body bgcolor = "#8A2BE2" >
+
+<img src="web.jpg"  height="200" width="100%">
+<div id="tabs">
+<ul>
+<li><a rel="nofollow" href = "logout.jsp" title="explodingboy"><span>Log Out</span></a></li>
+<li><a href="contact us.html"><span>Contact Us</span></a></li>
+ <li><a href="form.html"><span>Create Ad</span></a></li>
+<li><a href="url.html"><span>Message</span></a></li>
+<li><a href="url.html"><span>Profile</span></a></li>
+<li><a href="home.jsp"><span>Home</span></a></li>
+<li><a href="about us.html"><span>About Us</span></a></li>
+</ul>
+</div>
+<form action = "createad.jsp"  method = "post">
+
+<table width = "800" align = "center" border = '3' bordercolor = "white" Vspace = "50">
+<tr><td><font face = "impact" size="35" style = 'color:white'> Create An Ad.</font></td></tr>
+
+<tr><td align = "center">
+<input type="text" placeholder = "First Name " class="input" data-type="text" name="firstname" size = "22" required />
+<input type="text" placeholder = "Last Name" class="input" data-type="text" name="lastname" size = "19" required />
+<br><br>
+<input type = "text" placeholder = "Education" name = "education" size = "47" required/>
+<br><br>
+<input type = "text" placeholder = "Location" name = "location" size = "47" required />
+</td></tr>
+
+<tr><td align = "center">
+<textarea   id="description" name = "description" style="height: 140px; width: 370px" cols="80" rows="1" placeholder="Tell About Your Self" required></textarea></td></tr>
+
+<tr><td align = "center">
+<font size="5"  align = "center" style='color : white ; white-space:pre-wrapl' > Looking For :  </font>
+<input type="radio" name = "looking_for" value="1" ><label style = 'color : white' >Female</label> 
+<input type="radio" name = "looking_for" value="2" ><label style = 'color : white' >Male</label></td></tr>
+
+<tr><td align = "center">
+<input type = "text" name = "peducation" placeholder = "Education of your Partner" size = "47" required />
+<br><br>
+
+<input type = "email" name = "email" placeholder = "Email" size = "47" required/>
+<br><br>
+<input type = "text" name = "phone" placeholder = "Phone Number" size = "47"required /></td></tr>
+
+<tr><td align = "center">
+<select aria-label="Height" name = "height" style='height : 30px ; width : 185' required>
+<option value="0" selected="1">Height</option>
+<option value="2">6ft 06inch</option><option value="3">6ft 05inch</option><option value="4">6ft 04inch</option><option value="5">6ft 03inch</option>
+<option value="6">6ft 02inch</option><option value="7">6ft 01inch</option><option value="8">6ft</option><option value="9">5ft 11inch</option><option value="10">5ft 10inch</option>
+<option value="11">5ft 09inch</option><option value="12">5ft 08inch</option><option value="13">5ft 07inch</option><option value="14">5ft 06inch</option><option value="15">5ft 05inch</option>
+<option value="16">5ft 04inch</option><option value="17">5ft 03inch</option><option value="18">5ft 02inch</option><option value="19">5ft 01inch</option><option value="20">5ft</opyion>
+<option value="21">4ft 11inch</option><option value="22">4ft 10inch</option><option value="23">4ft 09inch</option><option value="24">4ft 08inch</option>
+<option value="25">4ft 07inch</option><option value="26">4ft 06inch</option><option value="27">4ft 05inch</option><option value="28">4ft 04inch</option><option value="29">4ft 03inch</option>
+<option value="30">4ft 02inch</option><option value="31">4ft 01inch</option><option value="32">4ft</opyion>
+</select>
+
+<select aria-label="Eye Color" name = "eye_c" style='height : 30px ; width : 185' required>
+<option value="0" selected="1">Eye Color</option>
+<option value="1">Black</option><option value="2">Brown</option><option value="3">Green</option><option value="4">Blue</option><option value="5">Grey</option><option value="6">Hazel</option>
+</select>
+<br><br>
+
+
+<select aria-label="Sect" name = "sect" style='height : 30px ; width : 185' required>
+<option value="0" selected="1">Sect</option>
+<option value="1">Sunni</option><option value="2">Wahabi</option><option value="3">Shia</option><option value="4">Brailvi</option><option value="5">Deo Band</option>
+</select>
+
+<select aria-label="Cast" name = "cast" style='height : 30px ; width : 185' required>
+<option value="0" selected="1">Cast</option>
+<option value="1">Arain</option><option value="2">Butt</option><option value="3">Jutt</option><option value="4">Rana</option><option value="5">Sheikh</option><option value="6">Mughal</option>
+</select></td></tr>
+
+<tr><td align = "center">
+<font size = "6"  style = 'color : white '>Date o' Birth: </font>
+
+<input type = "date" name = "dob" required/>
+<br><br>
+<input type = "text" placeholder = "user" name = "user" size = "47"  required/>
+<br><br><br>
+<input type="submit" value = "Create Ad"name="adsubmit" style='height : 45px ; width : 175' />
+</td></tr>
+
+</table>
+</form>
+</body>
+
+</html>
